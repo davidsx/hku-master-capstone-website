@@ -1,4 +1,9 @@
 {
-  "cSpell.words": ["clsx", "tailwindcss"],
+  "cSpell.words": [
+    "clsx",
+    "FOREX",
+    "NAPMPMI",
+    "tailwindcss"
+  ],
   "css.customData": [".vscode/tailwind.json"]
 }

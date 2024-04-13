@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { parse } from "papaparse";
 import path from "path";
 
-export async function getCryptoData(symbol: CryptoSymbol) {
+async function getCryptoData(symbol: CryptoSymbol) {
   const csvPath = path.resolve(process.cwd(), `src/data/crypto/${symbol}.csv`);
   const csv = await readFile(csvPath, "utf-8");
   const csvParseResult = parse<CryptoData>(csv, {
